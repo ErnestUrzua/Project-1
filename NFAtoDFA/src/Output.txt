@@ -1,0 +1,42 @@
+Test case 1
+run:
+Reading input
+[0, 1, 0, 0, 1, null, null, null, null, null]
+
+Transistion table for NFA
+q1 q1,q2 
+q3 lambda 
+lambda q4 
+q4 q4 
+
+Reading in machine input
+01001.. .  .    .       .              .              .        .     .   .  . . .
+0 Input accepted
+1 Input accepted
+0 Input accepted
+0 Input accepted
+1 Input accepted
+Input not accepted
+
+
+Test case 2
+
+run:
+Reading input
+[0, 0, 0, 0, 1, 1, null, null, null, null]
+
+Transistion table for NFA
+q1 q1,q2 
+q3 lambda 
+lambda q4 
+q4 q4 
+
+Reading in machine input
+000011.. .  .    .       .              .              .        .     .   .  . . .
+0 Input accepted
+0 Input accepted
+0 Input accepted
+0 Input accepted
+1 Input accepted
+1 Input accepted
+Input not accepted
