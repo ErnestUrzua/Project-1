@@ -102,16 +102,18 @@ public class NFAtoDFA {
 
         //check whether input is accepted by NFA
         while (array[k] != null) {
+            
+                if (array[k] == states[0][0]);
+                
+                    System.out.println(array[k] + " Input accepted");
+                k++;
+            }
 
-            if (array[k] == states[0][0]);
-
-            System.out.println(array[k] + " Input accepted");
-            k++;
+            accept = false;
+            System.out.println("Input not accepted");
         }
 
-        accept = false;
-        System.out.println("Input not accepted");
-    }
+    
 
     /**
      *
